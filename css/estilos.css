@@ -1,0 +1,325 @@
+/* ==============================================
+   🎨 PALETA DE COLORES (EXACTA DE TU IMAGEN)
+   ==============================================
+   Matcha Latte: #D1EFBF
+   Botanist: #89D385
+   Aquamarine: #6CD1F0
+   Grape Soda: #A1A1F7
+   Pink Diamond: #EFC6EA
+*/
+
+/* ==============================================
+   ✨ FUENTES (LAS QUE PEDISTE)
+   ==============================================
+   - Títulos principales: 'Ultra' (estilo Loud / llamativa)
+   - Subtítulos: 'Carattere' (caligráfica/formal)
+   - Texto normal: 'Inter' (limpia y legible)
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #222;
+    background-color: #fefefe;
+    line-height: 1.6;
+}
+
+/* ==============================================
+   🔝 MENÚ DE NAVEGACIÓN (ESTILO REFERENCIA)
+   ============================================== */
+.menu-principal {
+    background-color: #6CD1F0; /* Aquamarine */
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contenedor-menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px 15px;
+}
+
+.item-menu {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.item-menu:hover {
+    background-color: #89D385; /* Botanist */
+    color: #000;
+}
+
+/* ==============================================
+   🟦 SECCIÓN INICIO: IMAGEN IZQUIERDA + TEXTO
+   ============================================== */
+.seccion-inicio {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+}
+
+.contenedor-inicio {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.imagen-inicio {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.titulo-principal {
+    font-family: 'Ultra', serif; /* FUENTE MÁS LLAMATIVA */
+    font-size: 2.2rem;
+    color: #6CD1F0; /* Aquamarine */
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.proposito {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.logo-proyecto {
+    width: 70px;
+    height: auto;
+}
+
+/* ==============================================
+   🎨 SECCIONES GENERALES
+   ============================================== */
+.seccion {
+    padding: 50px 20px;
+}
+
+.contenedor {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* 🟩 Color 1: Matcha Latte */
+.color-1 { background-color: #D1EFBF; }
+/* 🟢 Color 2: Botanist */
+.color-2 { background-color: #89D385; }
+/* 🔵 Color 3: Aquamarine */
+.color-3 { background-color: #6CD1F0; }
+/* 🟣 Color 4: Grape Soda */
+.color-4 { background-color: #A1A1F7; }
+/* 🌸 Color 5: Pink Diamond */
+.color-5 { background-color: #EFC6EA; }
+
+.titulo-seccion {
+    font-family: 'Carattere', cursive; /* FUENTE CALIGRÁFICA */
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #222;
+    border-bottom: 2px solid rgba(255,255,255,0.4);
+    padding-bottom: 5px;
+}
+
+.texto-seccion {
+    font-size: 1.05rem;
+    margin-bottom: 25px;
+}
+
+/* ==============================================
+   📐 TRES COLUMNAS
+   ============================================== */
+.tres-columnas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.columna {
+    background-color: rgba(255,255,255,0.6);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.columna h3 {
+    font-family: 'Carattere', cursive;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* ==============================================
+   📋 LISTA DE CUIDADOS
+   ============================================== */
+.lista-cuidados {
+    background-color: rgba(255,255,255,0.6);
+    padding: 25px;
+    border-radius: 8px;
+    list-style: none;
+}
+
+.lista-cuidados li {
+    margin: 8px 0;
+    font-size: 1rem;
+}
+
+/* ==============================================
+   🆕 SECCIÓN FORMULARIO: MODERNO, COMPACTO + IMÁGENES LATERALES
+   ============================================== */
+.contenedor-formulario-moderno {
+    display: grid;
+    grid-template-columns: 180px 1fr 180px;
+    gap: 25px;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.img-lateral {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.formulario-compacto {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    backdrop-filter: blur(8px);
+}
+
+.campo, .campo-doble .campo {
+    margin-bottom: 18px;
+}
+
+.campo-doble {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    background: #fff;
+}
+
+.campo textarea {
+    resize: none;
+}
+
+.boton-guardar {
+    width: 100%;
+    padding: 12px;
+    background-color: #89D385;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.boton-guardar:hover {
+    background-color: #6CD1F0;
+}
+
+/* ==============================================
+   🖼️ GALERÍA DESPLAZABLE
+   ============================================== */
+.galeria-desplazable {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 15px 0;
+    scroll-snap-type: x mandatory;
+}
+
+.img-galeria {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    scroll-snap-align: start;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+.img-galeria:hover {
+    transform: scale(1.05);
+}
+
+/* ==============================================
+   📱 RESPONSIVO (CELULAR)
+   ============================================== */
+@media (max-width: 768px) {
+    .contenedor-inicio {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .titulo-principal {
+        font-size: 1.8rem;
+    }
+
+    /* 📱 EN CELULAR: OCULTAMOS IMÁGENES LATERALES Y FORMULARIO OCUPA TODO */
+    .contenedor-formulario-moderno {
+        grid-template-columns: 1fr;
+    }
+
+    .img-lateral {
+        display: none;
+    }
+
+    .campo-doble {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==============================================
+   🦶 PIE DE PÁGINA
+   ============================================== */
+.pie {
+    text-align: center;
+    padding: 20px;
+    font-weight: 500;
+}
