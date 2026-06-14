@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardines Polinizadores en Traspatio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Fuentes: Ultra (títulos llamativos), Carattere (caligráfica), Inter (texto limpio) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&family=Carattere&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 🔝 MENÚ DE NAVEGACIÓN (ESTILO REFERENCIA) -->
+    <nav class="menu-principal">
+        <div class="contenedor-menu">
+            <a href="#inicio" class="item-menu">Inicio</a>
+            <a href="#catalogo" class="item-menu">Catálogo</a>
+            <a href="#cuidados" class="item-menu">Cuidados</a>
+            <a href="#registro" class="item-menu">Registro</a>
+            <a href="#galeria" class="item-menu">Galería</a>
+            <a href="#acerca" class="item-menu">Acerca</a>
+        </div>
+    </nav>
+
+    <!-- 🟦 SECCIÓN INICIO: IMAGEN IZQUIERDA + TÍTULO DERECHA -->
+    <header id="inicio" class="seccion-inicio">
+        <div class="contenedor-inicio">
+            <img src="img/encabezado.jpg" alt="Jardín polinizador" class="imagen-inicio">
+            <div class="texto-inicio">
+                <h1 class="titulo-principal">Aplicación Móvil para Jardines Polinizadores en Traspatio</h1>
+                <p class="proposito">
+                    Desarrollar una aplicación que permita informar, guiar y organizar la construcción y el mantenimiento de jardines polinizadores en traspatio, mediante secciones como catálogo de plantas y recomendaciones de cuidado. Con ello se fortalecen las competencias del módulo de desarrollo para dispositivos móviles a través del diseño, implementación y prueba de una solución enfocada a su uso en smartphone.
+                </p>
+                <img src="img/logo.png" alt="Logo del proyecto" class="logo-proyecto">
+            </div>
+        </div>
+    </header>
+
+    <!-- 🟩 SECCIÓN 1: CATÁLOGO DE PLANTAS (3 COLUMNAS) -->
+    <section id="catalogo" class="seccion color-1">
+        <div class="contenedor">
+            <h2 class="titulo-seccion">Catálogo de Plantas</h2>
+            <p class="texto-seccion">Especies ideales para atraer abejas, mariposas y colibríes a tu hogar.</p>
+            
+            <div class="tres-columnas">
+                <div class="columna">
+                    <h3>Caléndula</h3>
+                    <p>Flor resistente, florece todo el año. Atrae abejas y mariposas, crece en cualquier tipo de suelo.</p>
+                </div>
+                <div class="columna">
+                    <h3>Salvia</h3>
+                    <p>Planta aromática, ideal para colibríes. Requiere mucho sol y poco riego, perfecta para traspatio.</p>
+                </div>
+                <div class="columna">
+                    <h3>Margarita</h3>
+                    <p>Fácil de cultivar, muy visitada por polinizadores. Florece en primavera y verano.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🟦 SECCIÓN 2: RECOMENDACIONES DE CUIDADO -->
+    <section id="cuidados" class="seccion color-2">
+        <div class="contenedor">
+            <h2 class="titulo-seccion">Recomendaciones de Cuidado</h2>
+            <p class="texto-seccion">Mantén tu jardín sano y seguro para los polinizadores:</p>
+
+            <ul class="lista-cuidados">
+                <li>🌱 Usa tierra orgánica, sin pesticidas ni químicos tóxicos.</li>
+                <li>💧 Riega por la mañana o tarde, evita el sol fuerte del mediodía.</li>
+                <li>☀️ Planta en zonas con buena luz solar (mínimo 6 horas al día).</li>
+                <li>🍂 Deja hojas secas o ramas pequeñas: sirven de refugio.</li>
+                <li>🌼 Agrega plantas de diferentes épocas de floración.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 🟪 SECCIÓN 3: REGISTRO DE PLANTAS (MODIFICADA: FORMULARIO COMPACTO + IMÁGENES LATERALES) -->
+    <section id="registro" class="seccion color-3">
+        <div class="contenedor">
+            <h2 class="titulo-seccion">Registro de Plantas</h2>
+            <p class="texto-seccion">Lleva el control de lo que plantas, cuándo y cómo lo cuidas:</p>
+
+            <!-- 🆕 ESTRUCTURA MODERNA: IMAGEN IZQ + FORMULARIO CENTRO + IMAGEN DER -->
+            <div class="contenedor-formulario-moderno">
+                <img src="img/decoracion1.jpg" alt="Decoración jardín" class="img-lateral">
+
+                <div class="formulario-compacto">
+                    <div class="campo">
+                        <label>Nombre de la planta</label>
+                        <input type="text" placeholder="Ej: Caléndula">
+                    </div>
+                    <div class="campo-doble">
+                        <div class="campo">
+                            <label>Fecha de siembra</label>
+                            <input type="date">
+                        </div>
+                        <div class="campo">
+                            <label>Tipo de planta</label>
+                            <select>
+                                <option>Flor</option>
+                                <option>Arbusto</option>
+                                <option>Hierba</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label>Notas de cuidado</label>
+                        <textarea placeholder="Riego cada 2 días, mucho sol..." rows="3"></textarea>
+                    </div>
+                    <button class="boton-guardar">Guardar registro</button>
+                </div>
+
+                <img src="img/decoracion2.jpg" alt="Decoración naturaleza" class="img-lateral">
+            </div>
+        </div>
+    </section>
+
+    <!-- 🟩 SECCIÓN 4: GALERÍA DESPLAZABLE (IMÁGENES PEQUEÑAS) -->
+    <section id="galeria" class="seccion color-4">
+        <div class="contenedor">
+            <h2 class="titulo-seccion">Galería de Imágenes</h2>
+            <p class="texto-seccion">Ejemplos de jardines polinizadores. Desliza para ver más:</p>
+
+            <div class="galeria-desplazable">
+                <img src="img/planta1.jpg" alt="Jardín 1" class="img-galeria">
+                <img src="img/planta2.jpg" alt="Jardín 2" class="img-galeria">
+                <img src="img/planta3.jpg" alt="Jardín 3" class="img-galeria">
+                <img src="img/planta4.jpg" alt="Jardín 4" class="img-galeria">
+                <img src="img/planta5.jpg" alt="Jardín 5" class="img-galeria">
+            </div>
+        </div>
+    </section>
+
+    <!-- 🟦 SECCIÓN 5: ACERCA DEL PROYECTO -->
+    <section id="acerca" class="seccion color-5">
+        <div class="contenedor">
+            <h2 class="titulo-seccion">Acerca del Proyecto</h2>
+            <p class="texto-seccion">
+                Este proyecto es parte del módulo <strong>Desarrolla aplicaciones móviles para iOS</strong>. Su objetivo es aplicar conocimientos de diseño, programación y usabilidad en una solución real, enfocada en el cuidado ambiental y la biodiversidad.
+            </p>
+            <p class="texto-seccion">
+                Se busca crear una herramienta útil, bonita y funcional, que cualquier persona pueda usar desde su celular para crear y mantener su propio jardín polinizador.
+            </p>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="pie color-1">
+        <p>Proyecto Transversal | I.S.C. Francisco Javier Mauro Esparza</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
