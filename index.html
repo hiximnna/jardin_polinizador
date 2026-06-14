@@ -5,40 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jardines Polinizadores en Traspatio</title>
     <link rel="stylesheet" href="css/estilos.css">
-    <!-- Fuentes: Ultra (títulos llamativos), Carattere (caligráfica), Inter (texto limpio) -->
+    <!-- Fuentes actualizadas: títulos llamativos, texto formal -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ultra&family=Carattere&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&family=Carattere&family=Merriweather:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- 🔝 MENÚ DE NAVEGACIÓN (ESTILO REFERENCIA) -->
+    <!-- 🔝 MENÚ CON LOGO A LA IZQUIERDA -->
     <nav class="menu-principal">
         <div class="contenedor-menu">
-            <a href="#inicio" class="item-menu">Inicio</a>
-            <a href="#catalogo" class="item-menu">Catálogo</a>
-            <a href="#cuidados" class="item-menu">Cuidados</a>
-            <a href="#registro" class="item-menu">Registro</a>
-            <a href="#galeria" class="item-menu">Galería</a>
-            <a href="#acerca" class="item-menu">Acerca</a>
+            <!-- Logo circular a la izquierda -->
+            <img src="img/logo.png" alt="Logo Jardines Polinizadores" class="logo-menu">
+            
+            <div class="enlaces-menu">
+                <a href="#inicio" class="item-menu">Inicio</a>
+                <a href="#catalogo" class="item-menu">Catálogo</a>
+                <a href="#cuidados" class="item-menu">Cuidados</a>
+                <a href="#registro" class="item-menu">Registro</a>
+                <a href="#galeria" class="item-menu">Galería</a>
+                <a href="#acerca" class="item-menu">Acerca</a>
+            </div>
         </div>
     </nav>
 
-    <!-- 🟦 SECCIÓN INICIO: IMAGEN IZQUIERDA + TÍTULO DERECHA -->
+    <!-- 🟦 SECCIÓN INICIO -->
     <header id="inicio" class="seccion-inicio">
         <div class="contenedor-inicio">
             <img src="img/encabezado.jpg" alt="Jardín polinizador" class="imagen-inicio">
             <div class="texto-inicio">
-                <h1 class="titulo-principal">Aplicación Móvil para Jardines Polinizadores en Traspatio</h1>
+                <h1 class="titulo-principal">Jardines Polinizadores en Traspatio</h1>
                 <p class="proposito">
                     Desarrollar una aplicación que permita informar, guiar y organizar la construcción y el mantenimiento de jardines polinizadores en traspatio, mediante secciones como catálogo de plantas y recomendaciones de cuidado. Con ello se fortalecen las competencias del módulo de desarrollo para dispositivos móviles a través del diseño, implementación y prueba de una solución enfocada a su uso en smartphone.
                 </p>
-                <img src="img/logo.jpg" alt="Logo del proyecto" class="logo-proyecto">
             </div>
         </div>
     </header>
 
-    <!-- 🟩 SECCIÓN 1: CATÁLOGO DE PLANTAS (3 COLUMNAS) -->
+    <!-- 🟩 CATÁLOGO DE PLANTAS -->
     <section id="catalogo" class="seccion color-1">
         <div class="contenedor">
             <h2 class="titulo-seccion">Catálogo de Plantas</h2>
@@ -61,7 +65,7 @@
         </div>
     </section>
 
-    <!-- 🟦 SECCIÓN 2: RECOMENDACIONES DE CUIDADO -->
+    <!-- 🟢 CUIDADOS -->
     <section id="cuidados" class="seccion color-2">
         <div class="contenedor">
             <h2 class="titulo-seccion">Recomendaciones de Cuidado</h2>
@@ -77,13 +81,12 @@
         </div>
     </section>
 
-    <!-- 🟪 SECCIÓN 3: REGISTRO DE PLANTAS (MODIFICADA: FORMULARIO COMPACTO + IMÁGENES LATERALES) -->
+    <!-- 🔵 REGISTRO DE PLANTAS -->
     <section id="registro" class="seccion color-3">
         <div class="contenedor">
             <h2 class="titulo-seccion">Registro de Plantas</h2>
             <p class="texto-seccion">Lleva el control de lo que plantas, cuándo y cómo lo cuidas:</p>
 
-            <!-- 🆕 ESTRUCTURA MODERNA: IMAGEN IZQ + FORMULARIO CENTRO + IMAGEN DER -->
             <div class="contenedor-formulario-moderno">
                 <img src="img/decoracion1.jpg" alt="Decoración jardín" class="img-lateral">
 
@@ -118,7 +121,7 @@
         </div>
     </section>
 
-    <!-- 🟩 SECCIÓN 4: GALERÍA DESPLAZABLE (IMÁGENES PEQUEÑAS) -->
+    <!-- 🟣 GALERÍA CON IMAGEN EXTRA -->
     <section id="galeria" class="seccion color-4">
         <div class="contenedor">
             <h2 class="titulo-seccion">Galería de Imágenes</h2>
@@ -130,11 +133,13 @@
                 <img src="img/planta3.jpg" alt="Jardín 3" class="img-galeria">
                 <img src="img/planta4.jpg" alt="Jardín 4" class="img-galeria">
                 <img src="img/planta5.jpg" alt="Jardín 5" class="img-galeria">
+                <!-- 🆕 IMAGEN EXTRA -->
+                <img src="img/planta6.jpg" alt="Jardín 6" class="img-galeria">
             </div>
         </div>
     </section>
 
-    <!-- 🟦 SECCIÓN 5: ACERCA DEL PROYECTO -->
+    <!-- 🌸 ACERCA DEL PROYECTO -->
     <section id="acerca" class="seccion color-5">
         <div class="contenedor">
             <h2 class="titulo-seccion">Acerca del Proyecto</h2>
@@ -155,3 +160,4 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+
